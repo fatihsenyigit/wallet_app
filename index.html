@@ -7,9 +7,61 @@
     <title>Wallet App</title>
 </head>
 <body>
-    
-
-
-    <script src="script.js"></script>
-</body>
+    <div class="main">
+      <h1>My Wallet App &#36;</h1>
+      <div class="form">
+        <h5>Harcama Formu</h5>
+        <div class="container-1">
+          <div class="div-1">
+            <p>Tarih</p>
+            <input type="date" name="" id="date" />
+          </div>
+          <div class="div-2">
+            <p>Harcama Miktari</p>
+            <input type="number" name="" id="amount" placeholder="$1000" />
+          </div>
+        </div>
+        <div class="container-2">
+          <p>Harcama Alani</p>
+          <input
+            type="text"
+            id="expense"
+            placeholder="Kira, Fatura, Kredi Karti vb."
+          />
+        </div>
+        <button class="btn">Kaydet</button>
+      </div>
+      <div class="container-3">
+        <input
+          type="number"
+          id="income"
+          placeholder="Please Enter Your Salary."
+        />
+        <button class="btn-green">Ekle</button>
+      </div>
+      <div class="container-4">
+        <div class="container-4-1">
+          <div class="grid-1">Tarih</div>
+          <div class="grid-1 grid-big">Harcama Alani</div>
+          <div class="grid-1">Miktar ($)</div>
+          <div class="grid-1">Islem</div>
+        </div>
+        <div class="container-4-2">
+            <div class="grid-1"><span class="date"></span></div>
+            <div class="grid-1 grid-big"><span class="harcama"></span></div>
+            <div class="grid-1"><span class="amount"></span></div>
+            <div class="grid-1"><i class="fas fa-trash"></i></div>
+        </div>
+      </div>
+      <div class="container-5">
+        <div class="grid-2">Salary ($):</div>
+        <div class="grid-3"><span class="salary"></span></div>
+        <div class="grid-2">Expenses ($):</div>
+        <div class="grid-3"><span class="expenses"></span></div>
+        <div class="grid-2">Remaining ($):</div>
+        <div class="grid-3"><span class="remaining"></span></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>

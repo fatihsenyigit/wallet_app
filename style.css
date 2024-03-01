@@ -1,0 +1,125 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    text-align: center;
+    padding: 2rem;
+}
+.main h1 {
+    color: green;
+    margin-bottom: 1rem;
+}
+.form {
+    border: 1px solid gainsboro;
+    padding: 2rem;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 1rem;
+}
+.form h5 {
+    margin: 1rem;
+    font-size: 1rem;
+}
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.div-1 {
+    width: 50%;
+}
+.div-1 p {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.div-1 input {
+    width: 100%;
+    padding: 5px;
+}
+.div-2 {
+    width: 50%;
+}
+.div-2 p {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.div-2 input {
+    width: 100%;
+    padding: 5px;
+}
+.container-2 p {
+    text-align: left;
+    margin-top: 2rem;
+}
+.container-2 input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 1rem;
+}
+.btn {
+    background-color: red;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 80px;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.container-3 {
+    margin-top: 2rem;
+}
+.container-3 input {
+    width: 85%;
+    padding: 5px;
+}
+.btn-green {
+   color: white;
+   background-color: green;
+   height: 30px;
+   width: 80px;
+   border: none;
+   border-radius: 1rem;
+   cursor: pointer;
+}
+.container-4 {
+    margin-top: 2rem;
+}
+.container-4-1, .container-4-2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-1 {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.518);
+    font-weight: bold;
+}
+.grid-big {
+    width: 250px;
+}
+.container-5 {
+    display: grid;;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    width: 50%;
+    float: right;
+}
+.grid-2 {
+    border: 1px solid gray;
+    text-align: right;
+    padding: 5px;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.237);
+}
+.grid-3 {
+    border: 1px solid gray;
+    text-align: right;
+    padding: 5px;
+}
+.fa-trash {
+    cursor: pointer;
+    color: red;
+}
