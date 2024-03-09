@@ -33,6 +33,3 @@ deleteBtn.addEventListener("click", () => {
 
 
 
-
-
-})
