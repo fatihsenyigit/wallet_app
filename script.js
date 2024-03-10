@@ -86,6 +86,13 @@ const hesaplaVeGuncelle = () => {
   giderinizTd.textContent = giderler;
   gelirinizTd.textContent = gelirler;
   kalanTd.textContent = gelirler - giderler
+  if(Number(kalanTd.textContent<0)) {
+    kalanTd.classList = 'text-danger'
+    kalanTd.previousElementSibling.classList = 'text-danger'
+  } else {
+    kalanTd.classList = "text-success";
+    kalanTd.previousElementSibling.classList = "text-success";
+  }
 }
 
 // trash can
