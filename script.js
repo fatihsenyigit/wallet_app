@@ -89,9 +89,12 @@ const hesaplaVeGuncelle = () => {
   if(Number(kalanTd.textContent<0)) {
     kalanTd.classList = 'text-danger'
     kalanTd.previousElementSibling.classList = 'text-danger'
-  } else {
+  } else if (Number(kalanTd.textContent > 0)) {
     kalanTd.classList = "text-success";
     kalanTd.previousElementSibling.classList = "text-success";
+  } else if (Number(kalanTd.textContent == 0)) {
+    kalanTd.classList = "text-dark";
+    kalanTd.previousElementSibling.classList = "text-dark";
   }
 }
 
@@ -104,6 +107,7 @@ harcamaBody.addEventListener('click', (e)=> {
     // tiklanilan id leri silip geri kalanlari array de tutma
     harcamaListesi = harcamaListesi.filter((e)=> e.id != id);
     localStorage.setItem("harcamalar", JSON.stringify(harcamaListesi));
+    hesaplaVeGuncelle()
   }
 })
 
