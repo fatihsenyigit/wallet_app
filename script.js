@@ -87,3 +87,16 @@ const hesaplaVeGuncelle = () => {
   gelirinizTd.textContent = gelirler;
   kalanTd.textContent = gelirler - giderler
 }
+
+// trash can
+
+harcamaBody.addEventListener('click', (e)=> {
+  if(e.target.classList.contains('fa-trash-can')) {
+    e.target.parentElement.parentElement.remove()
+    const id = e.target.id
+    // tiklanilan id leri silip geri kalanlari array de tutma
+    harcamaListesi = harcamaListesi.filter((e)=> e.id != id);
+    localStorage.setItem("harcamalar", JSON.stringify(harcamaListesi));
+  }
+})
+
