@@ -100,3 +100,13 @@ harcamaBody.addEventListener('click', (e)=> {
   }
 })
 
+temizleBtn.addEventListener('click', () => {
+  if(confirm('delete all information. Continue ?')) {
+    harcamaListesi = []
+    gelirler = 0
+    harcamaBody.innerHTML = ''
+    localStorage.removeItem('gelirler')
+    localStorage.removeItem('harcamalar')
+    hesaplaVeGuncelle()
+  }
+})
